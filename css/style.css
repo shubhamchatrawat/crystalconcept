@@ -1,0 +1,228 @@
+/* Global Styles */
+* {
+  font-family: Rubik, Roboto, Helvetica, Arial, "sans-serif";
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(113, 8, 233, 0.4);
+  padding: 10px 20px;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.navbar-brand {
+  color: rgb(98, 105, 201);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(98, 105, 201)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Message */
+.message {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7rem;
+  width: 100vw;
+  height: 80vh;
+  margin-bottom: 40px;
+}
+
+.message .image-container,
+.right {
+  height: 70vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.message .heading {
+  font-size: 3rem;
+  color: black;
+  width: 100%;
+
+  font-weight: 900;
+}
+.heading span {
+  color: rgb(98, 105, 201);
+}
+
+/* Main */
+.main {
+  text-align: center;
+  margin: 20px;
+}
+
+.btn {
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  height: 7rem;
+  padding: 0 5rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.btn:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: 0.1s;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  color: #333;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-content {
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-contact {
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(162, 21, 238, 0.5);
+  border: 1px solid transparent;
+  padding: 20px;
+}
+.footer-contact:hover {
+  background-color: aliceblue;
+}
+
+.footer-social {
+  margin-left: 50px;
+}
+.footer-social {
+  text-align: center;
+}
+
+.footer-contact,
+.footer-social {
+  margin: 20px 0;
+}
+/* Additional styling for footer social icons */
+.footer-social ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0;
+  text-align: center; /* Align list items in the center */
+}
+
+.footer-social li {
+  display: inline-block; /* Display list items horizontally */
+  margin: 0 10px; /* Add spacing between list items */
+}
+
+.footer-social a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Additional styling for social icons */
+.social-icons a {
+  color: #666;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #333;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .main {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .message {
+    padding: 0;
+    height: 64vh;
+    justify-content: center;
+  }
+  .message .image-container {
+    width: 80vw;
+
+    height: 36vh;
+    opacity: 0.8;
+  }
+  .message .right {
+    z-index: 100;
+    padding: 0px 40px;
+    text-align: center;
+    width: 100%;
+  }
+  .message .heading {
+    font-size: 2rem;
+
+    width: 100%;
+
+    font-weight: 900;
+  }
+
+  .right {
+    height: 50vh;
+    display: block;
+  }
+  .row {
+    margin: 0px;
+  }
+
+  .right h5 {
+    font-size: large;
+  }
+
+  .btn {
+    margin: 10px;
+    font-size: 20px;
+    padding: 20px 30px;
+    width: 35vh;
+    padding: 0 2.6rem;
+    height: 100px;
+  }
+}
