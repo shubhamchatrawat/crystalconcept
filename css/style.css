@@ -35,7 +35,7 @@ body {
   padding: 0 7rem;
   width: 100vw;
   height: 80vh;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .message .image-container,
@@ -206,7 +206,7 @@ footer {
   }
 
   .right {
-    height: 50vh;
+    height: 20vh;
     display: block;
   }
   .row {
