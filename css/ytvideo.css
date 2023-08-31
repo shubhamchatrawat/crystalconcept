@@ -1,7 +1,6 @@
 .ytvideo {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
 }
 
@@ -16,6 +15,7 @@
   box-shadow: 0 2px 4px rgba(162, 21, 238, 0.9);
   border-width: 1px;
   border-radius: 10px;
+  margin: 20px 0;
 }
 .ytvideo iframe:hover {
   border: 3px solid green;
